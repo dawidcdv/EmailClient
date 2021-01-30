@@ -3,10 +3,9 @@ import email
 from email.header import decode_header
 import webbrowser
 import os
-from src.gui.View import View
 
 
-class EmailClient(View.Controller):
+class EmailClient:
 
     def __init__(self,login, password, host="imap.gmail.com", port=993):
         self.login = login
